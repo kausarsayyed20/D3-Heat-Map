@@ -1,0 +1,47 @@
+body{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    margin-top: -40px;
+}
+
+svg{
+    border: 2px solid black;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    background-color: #ffffff;
+}
+
+ rect:hover {
+    stroke :black;
+}
+
+.container{
+    position: relative;
+}
+
+.tooltip{
+    background-color:#000;
+    display: none;
+    color: blanchedalmond;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    z-index :100;
+    opacity: 0.8;
+}
+
+
+.tooltip.show{
+    display: block;
+}
+.tooltip p{
+    margin:5px;
+}
